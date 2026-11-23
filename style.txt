@@ -1,0 +1,33 @@
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "Velvet Bloom Café | Coffee & Comfort",
+  description:
+    "Discover freshly brewed coffee, homemade treats and cozy moments at Velvet Bloom Café in Coimbatore.",
+  keywords: [
+    "cafe",
+    "coffee",
+    "Coimbatore",
+    "bakery",
+    "cappuccino",
+  ],
+  openGraph: {
+    title: "Velvet Bloom Café",
+    description:
+      "Coffee, comfort and a little magic.",
+    type: "website",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}
